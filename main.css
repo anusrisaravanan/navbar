@@ -1,0 +1,12 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.navbar_header{
+    background: rgb(111, 0, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 0.3rem solid rgb(21, 3, 44);
