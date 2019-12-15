@@ -5,8 +5,69 @@
 }
 
 .navbar_header{
-    background: rgb(111, 0, 255);
+    background: rgb(0, 153, 255);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    border-bottom: 0.3rem solid rgb(21, 3, 44);
+    border-bottom: 0.3rem solid rgb(0, 0, 0);
+}
+
+.navbar__btn{
+   align-self: center;
+   border: 5px solid rgb(0, 0, 0);
+   cursor: pointer;
+}
+
+.bar1,.bar2,.bar3{
+   width: 30px;
+   height: 5px;
+   margin: 0.5rem;
+   background:  rgb(6, 69, 110);
+   transition: all 2s ease;
+}
+
+.change .bar1{
+   transform: rotate(-45deg) translate(-10px ,10px)
+}
+
+.change .bar2{
+   opacity: 0;
+}
+
+.change .bar3{
+   transform: rotate(45deg) translate(-7px,-8px)
+}
+
+
+.navbar__links{
+   list-style-type: none;
+   transition: all 2s ease;
+   /* */
+   height: 0;
+   overflow: hidden;
+}
+
+
+.navbar__collapase{
+   height: 240px;
+}
+
+.navbar_single-link{
+   display: block;
+   background: rgb(90, 167, 255);
+   padding: 1rem;
+   font-size: 1.5rem;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: black;
+   cursor: pointer;
+}
+.navbar_single-link:hover{
+   padding-left: 1.5rem;
+   background: rgb(170, 164, 164);
+}
+
+header{
+   min-height: calc(60vh - 91.8px);
+   background: url('navbar.jpeg')center/cover no-repeat;
+}
